@@ -7,6 +7,7 @@
   </title>
     <link rel="stylesheet" href="fE.css">
     <link rel="stylesheet" href="/css/pharmacy.css">
+    <link rel="stylesheet" href="/css/addpharmacy.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -47,58 +48,19 @@
       </div>
     
 <main>
-  <table style="float: right; margin:5%; margin-top: 4%;">
-    <tr class="record">
-        <th class="record"> Pharmacy ID</th>
-        <th class="record"> address </th>
-        <th class="record"> phone number </th>
-        <th class="record"> manager name </th>
-        <th class="record"> manager phone number </th>
-        <th class="record"> editing options </th>
-    </tr>  
-    <tr class="record">
-      <td class="record"> 1 </th>
-      <td class="record"> Egypt,Tanta,Kafr Essam </th>
-      <td class="record"> 4700455 </th>
-      <td class="record"> Ahmed mohamed </th>
-      <td class="record"> 01012305549 </th>
-      <td> <a href="#"><i class="	fas fa-edit" style="color: rgb(46, 47, 100);
-        margin: 10px;"></i></a> 
-         <a href="#"><i class="fas fa-eraser" style="color: rgb(46, 47, 100);
-        margin: 10px;"></i></a>
-      </td>
-    </tr>
-    <tr class="record">
-      <td class="record"> 2 </th>
-      <td class="record"> Egypt,Tanta,Kafr Essam </th>
-      <td class="record"> 4700455 </th>
-      <td class="record"> Ahmed mohamed </th>
-      <td class="record"> 01012305549 </th>
-      <td> <a href="#"><i class="	fas fa-edit" style="color: rgb(46, 47, 100);
-          margin: 10px;"></i></a> 
-          <a href="#"><i class="fas fa-eraser" style="color: rgb(46, 47, 100);
-          margin: 10px;"></i></a>
-      </td>
-    </tr>
-    <tr class="record">
-      <td class="record"> 3 </th>
-      <td class="record"> Egypt,Tanta,Kafr Essam </th>
-      <td class="record"> 4700455 </th>
-      <td class="record"> Ahmed mohamed </th>
-      <td class="record"> 01012305549 </th>
-      <td> <a href="#"><i class="	fas fa-edit" style="color: rgb(46, 47, 100);
-          margin: 10px;"></i></a> 
-          <a href="#"><i class="fas fa-eraser" style="color: rgb(46, 47, 100);
-          margin: 10px;"></i></a>
-      </td>
-    </tr>
-  </table>
-  <div style="margin-left: 50%;">
-    <a href="/html/addpharmacy.html">
-      <button class="btn btn-outline-success" type="submit"> add pharmacy</button>
-      
-    </a>
-  </div>
+<div class="div1" style="margin-left: 30%; margin-right: 20%; margin-top:50px;">
+  <form >
+    <label for="adress"  style="color: rgb(46, 47, 100); font-weight: bold;">pharmacy address </label>
+    <input type="text" id="adress" name="adress" placeholder="pharmacy adress.." class="input1">
+    <label for="number" style="color: rgb(46, 47, 100); font-weight: bold;">pharmacy phone number</label>
+    <input type="text" id="number" name="number" placeholder="pharmacy phone number.." class="input1">
+    <label for="name" style="color: rgb(46, 47, 100); font-weight: bold;">manager name</label>
+    <input type="text" id="name" name="manager name" placeholder="manager name.." class="input1">  
+    <label for="number" style="color: rgb(46, 47, 100); font-weight: bold;">manager phone number</label>
+    <input type="text" id="number" name="number" placeholder="manager phone number.." class="input1">    
+    <input type="submit" value="add" class="btn btn-outline-success">
+  </form>
+</div>
 </main>
 </body>
 
