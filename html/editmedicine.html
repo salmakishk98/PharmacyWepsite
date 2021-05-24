@@ -5,6 +5,30 @@
   <title>
     Pharmacy
   </title>
+  <style>
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 50%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid rgb(189, 175, 175);
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #2b6777;
+      color: white;
+    }
+</style>
     <link rel="stylesheet" href="fE.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,47 +65,38 @@
       <div class="w3-sidebar w3-bar-block w3-grey w3-xxlarge" style="width:17%;">
         <a href="#" class="w3-bar-item w3-button" style="font-size: 27px; color:rgb(46, 47, 100);"><i class="fas fa-chart-line" style="margin-right: 5px;"></i> Dashboard</a> 
         <a href="/html/doctors.html" class="w3-bar-item w3-button" style="font-size: 30px; color:rgb(46, 47, 100);"><i class="fas fa-user-md" style="margin-right: 17px;"></i>Doctors</a> 
-        <a href="/html/medicine.html" class="w3-bar-item w3-button" style="font-size: 30px; color:rgb(46, 47, 100);"><i class="fas fa-capsules" style="margin-right: 5px;"></i> Medicine</a>
+        <a href="/html//medicine.html" class="w3-bar-item w3-button" style="font-size: 30px; color:rgb(46, 47, 100);"><i class="fas fa-capsules" style="margin-right: 5px;"></i> Medicine</a>
         <a href="/html//pharmacies.html" class="w3-bar-item w3-button" style="font-size: 30px; color:rgb(46, 47, 100);"><i class="	far fa-hospital" style="margin-right: 15px;"></i>Pharmacies</a> 
       </div>
     
-<table style="float: right; margin-right: 9%; margin-top: 4%;">
-<tr>
-    <td >
-        <div class="card" style="width: 18rem; height: 25rem; margin: 15px;">
-            <img src="/assets/dr1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Dr. Abdullah Saleh</h5>
-              <p class="card-text">Tel. 505 9875 537 <br/> Address: 14 Nasir City <br/> Salary: 2000$ </p>
-              <a href="#" class="btn btn-primary">Edit</a>
-              <a href="#" class="btn btn-primary">Delete</a>
-            </div>
-          </div>    
-    </td>
-    <td >
-        <div class="card" style="width: 18rem; height: 25rem; margin: 15px;">
-            <img src="/assets/dr2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Dr. Shady Fua'd</h5>
-              <p class="card-text">Tel. 505 0024 164 <br/> Address: 15 Saeed, Tanta <br/> Salary: 2000$ </p>
-              <a href="#" class="btn btn-primary">Edit</a>
-              <a href="#" class="btn btn-primary">Delete</a>
-            </div>
-          </div>
-    </td>
-    <td > 
-    <div class="card" style="width: 18rem; height: 25rem; margin: 15px; ">
-            <img src="/assets/dr3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Dr. Luqman Saleh</h5>
-              <p class="card-text">Tel. 505 5587 999 <br/> Address: 15 El-helw street, Tanta <br/> Salary: 2000$ </p>
-              <a href="#" class="btn btn-primary">Edit</a>
-              <a href="#" class="btn btn-primary">Delete</a>
-            </div>
-          </div>
-    </td>
-</tr>  
-    </table>
+      <div style="display:flex; justify-content: center; margin-top: 30px;">
+        <table id="customers">
+          <tr>
+            <th>Feature</th>
+            <th> Information</th>
+          </tr>
+          <tr>
+            <td> Name</td>
+            <td><input style="border: none; padding: 5px; background-color:#f2f2f2 ;" type="text" value="Panadol"></td>
+          </tr>
+          <tr>
+            <td>Quantity</td>
+            <td><input style="border: none; padding: 5px; ;" type="text" value="50"></td>
+          </tr>
+          
+            <td>Price</td>
+            <td><input style="border: none; padding: 5px; background-color:#f2f2f2 ;" type="text" value="40 LE"></td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td><input style="border: none;padding: 5px;;" type="text" value="Panadol Advance 500 mg Tablets are a mild analgesic and antipyretic, and are recommended for the treatment of most painful and febrile conditions"></td>
+          </tr>
+      </table>
+      </div>
+      <div style="margin-left:50%; margin-top: 30px;">
+        <button class="btn btn-outline-success" type="submit"> save </button>
+      </div>
+    
 <footer>
   
 </footer>
