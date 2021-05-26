@@ -5,9 +5,31 @@
   <title>
     Pharmacy
   </title>
+  <style>
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 50%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid rgb(189, 175, 175);
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #2b6777;
+      color: white;
+    }
+</style>
     <link rel="stylesheet" href="fE.css">
-    <link rel="stylesheet" href="/css/pharmacy.css">
-    <link rel="stylesheet" href="/css/addpharmacy.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -46,23 +68,35 @@
         <a href="/html/medicine.html" class="w3-bar-item w3-button" style="font-size: 30px; color:white;"><i class="fas fa-capsules" style="margin-right: 5px;"></i> Medicine</a>
         <a href="/html//pharmacies.html" class="w3-bar-item w3-button" style="font-size: 30px; color:white;"><i class="	far fa-hospital" style="margin-right: 15px;"></i>Pharmacies</a> 
       </div>
-<main>
-<div class="div1" style="margin-left: 30%; margin-right: 20%; margin-top:50px;">
-  <form >
-    <label for="adress"  style="color: white; font-weight: bold;">pharmacy address </label>
-    <input type="text" id="adress" name="adress" placeholder="pharmacy adress.." class="input1">
-    <label for="number" style="color: white; font-weight: bold;">pharmacy phone number</label>
-    <input type="text" id="number" name="number" placeholder="pharmacy phone number.." class="input1">
-    <label for="name" style="color: white; font-weight: bold;">manager name</label>
-    <input type="text" id="name" name="manager name" placeholder="manager name.." class="input1">  
-    <label for="number" style="color: white; font-weight: bold;">manager phone number</label>
-    <input type="text" id="number" name="number" placeholder="manager phone number.." class="input1">    
-    <input type="submit" value="add" class="btn btn-outline-success" style="background-color: #c8d8e4; border: #c8d8e4; color: #2b6777;font-weight: bold;">
-  </form>
-</div>
-</main>
+
+
+      <div style="display:flex; justify-content: center; margin-top: 4%;">
+        <table id="customers">
+          <tr>
+            <th>Feature</th>
+            <th> Information</th>
+          </tr>
+          <tr>
+            <td> address </td>
+            <td><input style="border: none; background-color:#f2f2f2 ; padding: 10px;" type="text" value="egypt,tanta,Kafr Essam"></td>
+          </tr>
+          <tr>
+            <td>phone number</td>
+            <td><input style="border: none; background-color:#c8d8e4; padding: 10px; " type="text" value="4700455"></td>
+          </tr>
+          
+            <td>manager name </td>
+            <td><input style="border: none; background-color:#f2f2f2 ; padding: 10px;" type="text" value="Ahmed mohamed"></td>
+          </tr>
+          <tr>
+            <td>manager phone number</td>
+            <td><input style="border: none; background-color:#c8d8e4 ; padding: 10px;" type="text" value="4700455"></td>
+          </tr>
+      </table>
+
+      </div>
+ 
 </body>
 
 </html>
-
 
