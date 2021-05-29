@@ -3,7 +3,7 @@ const app = express()
 const medicineLogic = require("./services/medicineLogic")
 const mongodb = require("./databaseConnection/connect")
 
-app.listen(3000,()=>console.log("listening to port 3000"))
+app.listen(5500,()=>console.log("listening to port 5500"))
 app.use(express.json())
 app.post("/addNewMedicine",medicineLogic.createNewMedicine)
 app.post("/deleteMedicine",medicineLogic.deleteMedicine)
